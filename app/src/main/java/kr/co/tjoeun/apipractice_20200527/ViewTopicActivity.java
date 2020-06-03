@@ -70,5 +70,8 @@ public class ViewTopicActivity extends BaseActivity {
     void setTopicValuesToUi() {
         binding.topicTxt.setText(mTopic.getTitle());
         Glide.with(mContext).load(mTopic.getImageUrl()).into(binding.topicImg);
+
+        binding.firstSideTitleTxt.setText(mTopic.getSideList().get(0).getTitle());
+        binding.secondSideTitleTxt.setText(mTopic.getSideList().get(1).getTitle());
     }
 }
