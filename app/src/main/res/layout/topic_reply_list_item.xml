@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:background="@drawable/blue_border_box"
-                android:textSize="10sp"
+                android:textSize="15sp"
                 android:text="반대"
                 android:textColor="#0000FF"/>
 
@@ -35,10 +35,39 @@
                 android:layout_marginLeft="5dp"
                 android:textColor="#000000"
                 android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
 
+            <Button
+                android:id="@+id/agreeBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/agree" />
+            <TextView
+                android:id="@+id/agreeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="0개"/>
+
+            <Button
+                android:id="@+id/disagreeBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/disagree"/>
+            <TextView
+                android:id="@+id/disagreeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="0개"/>
             <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:src="@drawable/right_arrow" />
 
         </LinearLayout>
@@ -52,40 +81,40 @@
             android:text="Lorem ipsum.."
             android:textColor="#000000" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/createdAtTxt"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="5dp">
+            android:text="\?분 전"
+            android:textColor="#A0A0A0" />
 
-            <TextView
-                android:id="@+id/createdAtTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="\?분 전"
-                android:textColor="#A0A0A0"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#DFDFDF" />
 
-            <TextView
-                android:layout_marginLeft="10dp"
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#DFDFDF" />
-
-            <TextView
-                android:id="@+id/reportTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:paddingRight="5dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:text="신고"
-                android:textSize="12sp"
-                android:textColor="#A0A0A0"/>
-
-        </LinearLayout>
-
+        <TextView
+            android:id="@+id/reportTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="신고"
+            android:textColor="#A0A0A0"
+            android:textSize="12sp" />
 
     </LinearLayout>
 

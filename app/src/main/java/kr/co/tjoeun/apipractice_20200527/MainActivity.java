@@ -36,6 +36,8 @@ public class MainActivity extends BaseActivity {
 
     Topic thisWeekTopic;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +48,15 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setupEvents() {
+
+        binding.topicImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(mContext, ViewTopicActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
 
         binding.goToUserListBtn.setOnClickListener(new View.OnClickListener() {
             @Override

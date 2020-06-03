@@ -20,6 +20,7 @@ import kr.co.tjoeun.apipractice_20200527.datas.TopicReply;
 public class TopicReplyAdapter extends ArrayAdapter<TopicReply> {
 
 
+
     Context mContext;
     List<TopicReply> mList;
     LayoutInflater inf;
@@ -34,6 +35,11 @@ public class TopicReplyAdapter extends ArrayAdapter<TopicReply> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+
+
+
+
+
         View row = convertView;
 
         if (row == null) {

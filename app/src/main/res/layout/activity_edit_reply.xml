@@ -7,9 +7,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10dp"
+        android:gravity="center"
         tools:context=".EditReplyActivity">
 
         <TextView
+            android:layout_marginTop="400px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="토론 주제" />
@@ -35,18 +37,21 @@
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/agreeRadioBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="찬성" />
 
             <RadioButton
                 android:id="@+id/disagreeRadioBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="반대" />
 
         </RadioGroup>
@@ -65,10 +70,17 @@
             android:gravity="top"
             android:minLines="5"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
         <Button
             android:id="@+id/postBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/bluerounded"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
             android:text="등록하기" />
 
     </LinearLayout>

@@ -31,6 +31,8 @@ public class UserListActivity extends BaseActivity {
     List<User> users = new ArrayList<>();
     UserAdapter mAdapter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

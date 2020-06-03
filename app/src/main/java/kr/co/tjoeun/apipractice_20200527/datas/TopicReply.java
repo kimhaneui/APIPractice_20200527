@@ -16,7 +16,10 @@ public class TopicReply {
     private User writer;
     private Calendar createdAt = Calendar.getInstance(); // 작성 일시 기록
 
+
+
     public static TopicReply getTopicReplyFromJson(JSONObject jsonObject) {
+
         TopicReply tr = new TopicReply();
 
         try {

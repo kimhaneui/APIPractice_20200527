@@ -7,10 +7,39 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".LoginActivity"
+        android:background="#ffffff"
         android:padding="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/app_logo_round"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:text="찬성 vs 반대"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="의견을 내보자! 토론앱"/>
+
+        </LinearLayout>
+
 
         <EditText
             android:id="@+id/emailEdt"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -27,19 +56,37 @@
             android:id="@+id/autoLoginCheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#3154ff"
             android:text="자동 로그인" />
 
-        <Button
-            android:id="@+id/loginBtn"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="로그인" />
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
 
-        <Button
-            android:id="@+id/signUpBtn"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="회원가입" />
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:layout_weight="1"
+                android:radius="50dp"
+                android:layout_marginRight="5dp"
+                android:text="로그인" />
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="회원가입" />
+        </LinearLayout>
+
 
 
     </LinearLayout>
